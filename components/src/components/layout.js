@@ -1,11 +1,14 @@
 import React from "react"
 import PropTypes from "prop-types"
 import { StaticQuery, graphql } from "gatsby"
+import { ThemeProvider } from 'styled-components'
+import { Gray as theme} from '../themes/Gray'
 
 import Header from "./header"
 import "./layout.css"
 
 const Layout = ({ children }) => (
+<ThemeProvider theme={theme}>
   <StaticQuery
     query={graphql`
       query SiteTitleQuery {
@@ -37,6 +40,7 @@ const Layout = ({ children }) => (
       </>
     )}
   />
+  </ThemeProvider>
 )
 
 Layout.propTypes = {
