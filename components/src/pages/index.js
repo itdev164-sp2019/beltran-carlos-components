@@ -16,7 +16,7 @@ const IndexPage = () => (
       <Image />
     </div>
     <Address>
-      Address: 357 Main St. 
+      Address: 9467 Main St. 
       <Button variant={"primary"}>Contact me</Button>
     </Address>
   </Layout>
