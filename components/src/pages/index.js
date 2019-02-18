@@ -1,10 +1,11 @@
 import React from "react"
-//import { Link } from "gatsby"
+import { Link } from "gatsby"
 
 import Layout from "../components/layout"
 import Image from "../components/image"
 import SEO from "../components/seo"
-import { Address, Button } from "../components/Element"
+import { Address, Button, IconButton, Section} from "../components/Element"
+import {Search} from 'styled-icons/feather'
 
 const IndexPage = () => (
   <Layout>
@@ -16,9 +17,14 @@ const IndexPage = () => (
       <Image />
     </div>
     <Address>
-      Address: 357 Main St. 
+      Address: 9467 Main St. 
       <Button variant={"primary"}>Contact me</Button>
     </Address>
+    <Section flex justifyContent="space-evenly" m={2}>
+        <Link to="/page-2/">Go to Page 2</Link>
+        <Button variant="primary">Custom Button!</Button>
+        <IconButton icon={<Search />} />
+      </Section>
   </Layout>
 )
 
