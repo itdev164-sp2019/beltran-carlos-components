@@ -88,30 +88,6 @@
         "origin": "AUTHORED",
         "exported": true
     },
-    "felixbec.itdev164/masthead@1.0.0": {
-        "files": [
-            {
-                "relativePath": "src/components/Masthead/Masthead.js",
-                "test": false,
-                "name": "Masthead.js"
-            }
-        ],
-        "mainFile": "src/components/Masthead/Masthead.js",
-        "origin": "AUTHORED",
-        "exported": true
-    },
-    "felixbec.itdev164/masthead/index@1.0.0": {
-        "files": [
-            {
-                "relativePath": "src/components/Masthead/index.js",
-                "test": false,
-                "name": "index.js"
-            }
-        ],
-        "mainFile": "src/components/Masthead/index.js",
-        "origin": "AUTHORED",
-        "exported": true
-    },
     "felixbec.itdev164/element/index@1.0.0": {
         "files": [
             {
@@ -175,6 +151,30 @@
         ],
         "mainFile": "src/components/Element/Footer/index.js",
         "trackDir": "src/components/Element/Footer",
+        "origin": "AUTHORED",
+        "exported": true
+    },
+    "felixbec.itdev164/masthead@1.0.2": {
+        "files": [
+            {
+                "relativePath": "src/components/Masthead/Masthead.js",
+                "test": false,
+                "name": "Masthead.js"
+            }
+        ],
+        "mainFile": "src/components/Masthead/Masthead.js",
+        "origin": "AUTHORED",
+        "exported": true
+    },
+    "felixbec.itdev164/masthead/index@1.0.2": {
+        "files": [
+            {
+                "relativePath": "src/components/Masthead/index.js",
+                "test": false,
+                "name": "index.js"
+            }
+        ],
+        "mainFile": "src/components/Masthead/index.js",
         "origin": "AUTHORED",
         "exported": true
     },
