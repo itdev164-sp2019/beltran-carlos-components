@@ -1,1 +1,2 @@
-export {Masthead} from './Masthead';
+export { Masthead } from './Masthead';
+export { DefaultLayout } from './Layouts'

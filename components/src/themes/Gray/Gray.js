@@ -1,6 +1,7 @@
 import React from 'react';
 import masterheadImage from './images/styled-components.png';
 import {Menu, Search } from 'styled-icons/feather'
+import {darken} from 'polished';
 
 const images = {
   masterheadImage
@@ -56,6 +57,13 @@ const theme = {
       border: theme.borders[3],
       textTransform: 'uppercase',
       letterSpacing: theme.letterSpacings.tracked
+    },
+    masthead: {
+      height: '100%',
+      width: '100%',
+      background: theme.colors.primary.main,
+      borderBottom: theme.borders[1],
+      borderColor: darken(0.1, theme.colors.primary.main)
     },
     text: {
       lineHeight: theme.lineHeights.copy
