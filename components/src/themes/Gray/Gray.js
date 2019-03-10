@@ -1,10 +1,10 @@
 import React from 'react';
-import masterheadImage from './images/styled-components.png';
+import mastheadImage from './images/styled-components.png';
 import {Menu, Search } from 'styled-icons/feather'
 import {darken} from 'polished';
 
 const images = {
-  masterheadImage
+  mastheadImage
 }
 
 const icons = {

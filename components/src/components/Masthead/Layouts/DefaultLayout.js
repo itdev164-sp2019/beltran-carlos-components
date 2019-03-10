@@ -29,7 +29,7 @@ export const DefaultLayout = ({ image }) => (
             <img src={image} alt="" />
         </Section>
 
-        <Section flex width={[8 / 12, 1 / 3, 1 / 3]} justifyContent="flex-start">
+        <Section flex width={[8 / 12, 1 / 3, 1 / 3]} justifyContent="flex-end">
             <Item>
                 <SearchButton variant="contrast" />
             </Item>
