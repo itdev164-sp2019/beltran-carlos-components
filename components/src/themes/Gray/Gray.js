@@ -1,3 +1,17 @@
+import React from 'react';
+import mastheadImage from './images/styled-components.png';
+import {Menu, Search } from 'styled-icons/feather'
+import {darken} from 'polished';
+
+const images = {
+  mastheadImage
+}
+
+const icons = {
+  Menu: <Menu />,
+  Search: <Search />
+}
+
 const theme = {
     space: [0, 4, 8, 16, 32, 64, 128, 256, 512],
     lineHeights: {
@@ -43,6 +57,13 @@ const theme = {
       border: theme.borders[3],
       textTransform: 'uppercase',
       letterSpacing: theme.letterSpacings.tracked
+    },
+    masthead: {
+      height: '100%',
+      width: '100%',
+      background: theme.colors.primary.main,
+      borderBottom: theme.borders[1],
+      borderColor: darken(0.1, theme.colors.primary.main)
     },
     text: {
       lineHeight: theme.lineHeights.copy
@@ -90,5 +111,5 @@ const theme = {
     }
   }
   
-  const Gray = { ...theme, defaults, variants }
+  const Gray = { ...theme, defaults, variants, images, icons }
   export { Gray }
