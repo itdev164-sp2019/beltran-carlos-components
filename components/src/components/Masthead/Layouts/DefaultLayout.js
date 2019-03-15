@@ -1,7 +1,7 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 import styled from 'styled-components';
-import { Header, Button, Section  } from '../../Element'
+import { Header, Button, Section, Image  } from '../../Element'
 import { MenuButton, SearchButton } from '../../Buttons'
 
 
@@ -26,7 +26,13 @@ export const DefaultLayout = ({ image }) => (
         </Section>
 
         <Section flex width={[4 / 12, 1 / 3, 1 / 3]} justifyContent="center">
-            <img src={image} alt="" />
+            <Image 
+            src={image}
+            alt="masthead logo"
+            height={[24, 60, 60]}
+            width={[100,246,246]}
+            mx="auto"
+              />
         </Section>
 
         <Section flex width={[8 / 12, 1 / 3, 1 / 3]} justifyContent="flex-end">

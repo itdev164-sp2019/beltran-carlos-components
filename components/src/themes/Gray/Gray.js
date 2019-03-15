@@ -58,6 +58,9 @@ const theme = {
       textTransform: 'uppercase',
       letterSpacing: theme.letterSpacings.tracked
     },
+    link: {
+      textDecoration: 'none'
+    },
     masthead: {
       height: '100%',
       width: '100%',
@@ -88,6 +91,16 @@ const theme = {
         color: theme.colors.primary.main
       },
       contrast: {
+        color: theme.colors.primary.contrastText
+      }
+    },
+    link: {
+      primary: {
+        ...defaults.link,
+        color: theme.colors.primary.main
+      },
+      contrast: {
+        ...defaults.link,
         color: theme.colors.primary.contrastText
       }
     },
