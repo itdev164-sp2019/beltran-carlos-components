@@ -12,7 +12,10 @@ const icons = {
   Search: <Search />
 }
 
+const breakpoints =[576,768,992,1200]
+
 const theme = {
+    breakpoints: [...breakpoints],
     space: [0, 4, 8, 16, 32, 64, 128, 256, 512],
     lineHeights: {
       solid: 1,
@@ -48,6 +51,20 @@ const theme = {
         disabled: 'hsl(208, 13%, 75%)',
         hint: 'hsl(208, 13%, 75%)'
       }
+      
+    },      
+    media : {
+      sizes: {
+        xl: breakpoints[3],
+        desktop: breakpoints[2],
+        tablet: breakpoints[1],
+        phone: breakpoints[0]
+      }
+    },
+    transitions: {
+      short: 'all 0.3s ease-out',
+      medium: 'all 0.6s ease-out',
+      long: 'all 0.9s ease-out'
     }
   }
   
@@ -92,6 +109,14 @@ const theme = {
       },
       contrast: {
         color: theme.colors.primary.contrastText
+      }
+    },
+    mastheadDrawer: {
+      primary: {
+        background: theme.colors.primary.main
+      },
+      contrast: {
+        background: theme.colors.primary.contrastText
       }
     },
     link: {
