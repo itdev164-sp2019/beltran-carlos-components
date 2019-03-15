@@ -1,8 +1,9 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 import styled from 'styled-components';
-import { BaseContainer, Header, Button, Section, Image, Link  } from '../../Element'
+import { Header, Button, Section, Image, Link, Nav  } from '../../Element'
 import { MenuButton, SearchButton } from '../../Buttons'
+import {MediaQuery} from '../../MediaQuery'
 
 
 
@@ -17,7 +18,7 @@ Item.defaultProps = {
     mr: 3
 }
 
-const Nav = props => <BaseContainer as="nav" {...props} />
+{/*const Nav = props => <BaseContainer as="nav" {...props} /> */}
 
 export const DefaultLayout = ({ image }) => (
     <StyledHeader flex alignItems="center" p={3}>
@@ -25,18 +26,20 @@ export const DefaultLayout = ({ image }) => (
             <Item>
                 <MenuButton variant="contrast" />
             </Item>
-            <Nav flex>
-                <Item>
-                    <Link variant="contrast" href="about.html">
-                    About
-                    </Link>
-                </Item>
-                <Item>
-                    <Link variant="contrast" href="contact.html">
-                    Contact
-                    </Link>
-                </Item>
-            </Nav>
+            <MediaQuery device="desktop">
+                {/*<Nav flex style={{lineHeight: '1.5em'}}>
+                    <Item>
+                        <Link variant="contrast" href="about.html">
+                        About
+                        </Link>
+                    </Item>
+                    <Item>
+                        <Link variant="contrast" href="contact.html">
+                        Contact
+                        </Link>
+                    </Item>
+                </Nav>*/}
+            </MediaQuery>
         </Section>
 
         <Section flex width={[4 / 12, 1 / 3, 1 / 3]} justifyContent="center">
@@ -51,7 +54,9 @@ export const DefaultLayout = ({ image }) => (
 
         <Section flex width={[8 / 12, 1 / 3, 1 / 3]} justifyContent="flex-end">
             <Item>
-                <SearchButton variant="contrast" />
+                <MediaQuery device="tablet">
+                    <SearchButton variant="contrast" />
+                </MediaQuery>
             </Item>
             <Item>
                 <Button fontSize={[0,2,3]} variant="contrast">
