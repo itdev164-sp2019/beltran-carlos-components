@@ -1,7 +1,7 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 import styled from 'styled-components';
-import { Header, Button, Section, Image  } from '../../Element'
+import { BaseContainer, Header, Button, Section, Image, Link  } from '../../Element'
 import { MenuButton, SearchButton } from '../../Buttons'
 
 
@@ -17,12 +17,26 @@ Item.defaultProps = {
     mr: 3
 }
 
+const Nav = props => <BaseContainer as="nav" {...props} />
+
 export const DefaultLayout = ({ image }) => (
     <StyledHeader flex alignItems="center" p={3}>
         <Section flex width={[24, 1 / 3, 1 / 3]} mr={3}>
             <Item>
                 <MenuButton variant="contrast" />
             </Item>
+            <Nav flex>
+                <Item>
+                    <Link variant="contrast" href="about.html">
+                    About
+                    </Link>
+                </Item>
+                <Item>
+                    <Link variant="contrast" href="contact.html">
+                    Contact
+                    </Link>
+                </Item>
+            </Nav>
         </Section>
 
         <Section flex width={[4 / 12, 1 / 3, 1 / 3]} justifyContent="center">
