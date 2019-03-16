@@ -1,7 +1,7 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 import styled from 'styled-components';
-import { Header, Button, Section, Image, Link, Nav  } from '../../Element'
+import { Header, Button, Section, Image, Nav, Link } from '../../Element'
 import { MenuButton, SearchButton } from '../../Buttons'
 import {MediaQuery} from '../../MediaQuery'
 
@@ -18,7 +18,7 @@ Item.defaultProps = {
     mr: 3
 }
 
-{/*const Nav = props => <BaseContainer as="nav" {...props} /> */}
+
 
 export const DefaultLayout = ({ image }) => (
     <StyledHeader flex alignItems="center" p={3}>
@@ -27,7 +27,7 @@ export const DefaultLayout = ({ image }) => (
                 <MenuButton variant="contrast" />
             </Item>
             <MediaQuery device="desktop">
-                {/*<Nav flex style={{lineHeight: '1.5em'}}>
+                {<Nav flex style={{lineHeight: '1.5em'}}>
                     <Item>
                         <Link variant="contrast" href="about.html">
                         About
@@ -38,7 +38,7 @@ export const DefaultLayout = ({ image }) => (
                         Contact
                         </Link>
                     </Item>
-                </Nav>*/}
+                </Nav>}
             </MediaQuery>
         </Section>
 
