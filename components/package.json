@@ -6,8 +6,11 @@
   "author": "Kyle Mathews <mathews.kyle@gmail.com>",
   "dependencies": {
     "babel-plugin-styled-components": "^1.10.0",
+    "flow-remove-types": "^1.2.3",
+    "flow-typed": "^2.5.1",
     "gatsby": "^2.0.117",
     "gatsby-image": "^2.0.29",
+    "gatsby-plugin-flow": "^1.0.4",
     "gatsby-plugin-manifest": "^2.0.17",
     "gatsby-plugin-offline": "^2.0.23",
     "gatsby-plugin-react-helmet": "^3.0.6",
@@ -33,7 +36,8 @@
     "develop": "gatsby develop",
     "start": "npm run develop",
     "serve": "gatsby serve",
-    "test": "echo \"Write tests! -> https://gatsby.app/unit-testing\""
+    "test": "echo \"Write tests! -> https://gatsby.app/unit-testing\"",
+    "flow": "flow"
   },
   "repository": {
     "type": "git",
@@ -41,5 +45,8 @@
   },
   "bugs": {
     "url": "https://github.com/gatsbyjs/gatsby/issues"
+  },
+  "devDependencies": {
+    "flow-bin": "^0.95.1"
   }
 }
