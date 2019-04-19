@@ -6,6 +6,7 @@ import Image from "../gatsby-components/image"
 import SEO from "../gatsby-components/seo"
 import { Address, Button, IconButton, Section} from "../components/Element"
 import {Search} from 'styled-icons/feather'
+import {ShareButtonList} from '../components/SocialShareButton/ShareButtonList'
 
 const IndexPage = () => (
   <Layout>
@@ -20,6 +21,12 @@ const IndexPage = () => (
       Address: 9467 Main St. 
       <Button variant={"primary"}>Contact me</Button>
     </Address>
+    <ShareButtonList
+      addThisPubId="ra-5cba04a1757a1bc3"
+      contentTitle="Fake Title"
+      contentImage="http://placekitten.com/g/300/700"
+      contentDescription="Article about kittens"
+      />
     <Section flex justifyContent="space-evenly" m={2}>
         <Link to="/page-2/">Go to Page 2</Link>
         <Button variant="primary">Custom Button!</Button>
