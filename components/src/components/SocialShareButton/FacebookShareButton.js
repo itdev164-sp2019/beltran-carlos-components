@@ -11,7 +11,7 @@ const Image = styled.img`
 const linkTitle = 'Share this on Facebook',
     linkClassName = 'addthis_button_facebook',
     linkEventLabel = 'Facebook'
-
+{/*FaceBook Share Button*/}
 export const FacebookShareButton = props => (
     <BaseShareButton
         linkTitle={linkTitle}
