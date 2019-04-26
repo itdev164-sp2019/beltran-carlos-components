@@ -56,8 +56,9 @@ export const BaseShareButton = ({
     }, [])
 
     return (
+        <div>
         <a
-        href="javascript:void(0)"
+        href="#"
         title={linkTitle}
         className={linkClassName}
         data-eventcategory="Social Share"
@@ -65,6 +66,7 @@ export const BaseShareButton = ({
         >
         {children}
         </a>
+        </div>
     )
 }
 

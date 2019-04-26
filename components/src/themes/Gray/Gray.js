@@ -96,7 +96,8 @@ const theme = {
     },
     socialShareButton:{
       img:{
-        height: '33px',
+        width: '100px',
+        height: 'auto',
        
       },
     },

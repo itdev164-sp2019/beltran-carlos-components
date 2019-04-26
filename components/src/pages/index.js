@@ -21,12 +21,14 @@ const IndexPage = () => (
       Address: 9467 Main St. 
       <Button variant={"primary"}>Contact me</Button>
     </Address>
+    
     <ShareButtonList
       addThisPubId="ra-5cba04a1757a1bc3"
       contentTitle="Fake Title"
       contentImage="http://placekitten.com/g/300/700"
       contentDescription="Article about kittens"
       />
+
     <Section flex justifyContent="space-evenly" m={2}>
         <Link to="/page-2/">Go to Page 2</Link>
         <Button variant="primary">Custom Button!</Button>
